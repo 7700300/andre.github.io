@@ -851,7 +851,7 @@ function getAllItemsInRadius(radius, stoneType) {
 
     return itemsInRadius;
 }
-
+/////правка
 function getStoneTypeById(id) {
     var typeNum = 0;
     var len = forest_frame.global_data.abs_poses_index.length;
@@ -861,9 +861,6 @@ function getStoneTypeById(id) {
             		typeNum = parseInt(item.type)
         		}
             }
-
-
-///////////////////////////////////////////////////////////проверка
     if(typeNum == 8 || typeNum == 29) {
         return "copper";
     }
@@ -872,6 +869,7 @@ function getStoneTypeById(id) {
     }
     return "undefined";
 }
+
 
 function clickSearch() {
     hitCount++;
